@@ -17,6 +17,8 @@ print("YYAYY")
 for i in script:
     line = script.readline()
     pyautogui.typewrite(line + i + '\n')
+    #because its too flippin fast
+    time.sleep(0.5)
     # failsafe :)
     if keyboard.is_pressed('q'):
         break
